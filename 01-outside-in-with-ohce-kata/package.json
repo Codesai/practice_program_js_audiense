@@ -6,6 +6,7 @@
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
+  "type": "module",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
