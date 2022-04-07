@@ -12,6 +12,8 @@
   },
   "scripts": {
     "test": "jest",
+    "test:unit": "jest test/unit",
+    "test:acceptance": "jest test/acceptance",
     "test:watch": "jest --watch"
   },
   "jest": {
