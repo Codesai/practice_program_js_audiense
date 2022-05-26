@@ -26,10 +26,10 @@ describe('Account', () => {
         const firstTransaction = aDeposit(firstTransactionAmount, firstTransactionDate);
         const secondTransactionDate = date(2022, 1, 13);
         const secondTransactionAmount = 2000;
-        const secondTransaction = aDeposit(secondTransactionDate, secondTransactionAmount);
+        const secondTransaction = aDeposit(secondTransactionAmount, secondTransactionDate);
         const thirdTransactionDate = date(2022, 1, 14);
         const thirdTransactionAmount = 500;
-        const thirdTransaction = aWithdrawal(thirdTransactionDate, thirdTransactionAmount);
+        const thirdTransaction = aWithdrawal(thirdTransactionAmount, thirdTransactionDate);
         transactionRepository.getAll.mockReturnValueOnce([
             firstTransaction,
             secondTransaction,
