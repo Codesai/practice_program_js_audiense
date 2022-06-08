@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "node-persist": "^2.1.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
@@ -13,6 +15,7 @@
   "scripts": {
     "test": "jest",
     "test:unit": "jest test/unit",
+    "test:integration": "jest test/integration",
     "test:acceptance": "jest test/acceptance",
     "test:watch": "jest --watch"
   },
