@@ -17,6 +17,7 @@
     "test:unit": "jest test/unit",
     "test:integration": "jest test/integration",
     "test:acceptance": "jest test/acceptance",
+    "test:coverage": "jest --coverage",
     "test:watch": "jest --watch"
   },
   "jest": {
