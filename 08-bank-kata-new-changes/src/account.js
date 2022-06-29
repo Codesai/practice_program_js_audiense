@@ -1,4 +1,4 @@
-import {Transaction} from "./transaction";
+import {Transaction} from "./transaction.js";
 
 export default class Account {
     constructor(transactionRepository, calendar, printer) {
