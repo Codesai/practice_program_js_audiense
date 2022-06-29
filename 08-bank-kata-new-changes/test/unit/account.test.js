@@ -17,7 +17,6 @@ describe('Account', () => {
         };
         account = new Account(
             transactionRepository,
-            display,
             calendar,
             printer
         );

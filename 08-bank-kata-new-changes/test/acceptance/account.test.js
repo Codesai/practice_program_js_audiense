@@ -1,5 +1,6 @@
 import Account from "../../src/account";
 import {aDeposit, aWithdrawal, date} from "../helpers";
+import {Printer} from "../../src/printer";
 
 describe('Account', () => {
     let transactionRepository, display, calendar, printer, account;
@@ -14,12 +15,9 @@ describe('Account', () => {
         calendar = {
             now: jest.fn()
         };
-        printer = {
-            print: jest.fn()
-        };
+        printer = new Printer(display);
         account = new Account(
             transactionRepository,
-            display,
             calendar,
             printer
         );
@@ -50,12 +48,12 @@ describe('Account', () => {
         account.withdraw(thirdTransactionAmount);
         account.printStatement();
 
-        expect(transactionRepository.save.mock.calls).toStrictEqual([
+        expect(transactionRepository.save.mock.calls).toEqual([
             [firstTransaction],
             [secondTransaction],
             [thirdTransaction],
         ]);
-        expect(display.show.mock.calls).toStrictEqual([
+        expect(display.show.mock.calls).toEqual([
             ['date || credit || debit || balance'],
             ['14/01/2022 || || 500.00 || 2500.00'],
             ['13/01/2022 || 2000.00 || || 3000.00'],

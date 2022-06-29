@@ -1,9 +1,8 @@
 import {Transaction} from "./transaction";
 
 export default class Account {
-    constructor(transactionRepository, display, calendar, printer) {
+    constructor(transactionRepository, calendar, printer) {
         this._transactionRepository = transactionRepository;
-        this._display = display;
         this._calendar = calendar;
         this._printer = printer;
     }
