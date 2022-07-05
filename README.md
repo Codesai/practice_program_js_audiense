@@ -1,5 +1,11 @@
-# Katas
+# Deliberate Practice Program
 
-### Session 1: Outside-in TDD and test doubles.
-[Outside-in TDD with Ohce kata](https://github.com/Codesai/practice_program_js/tree/main/01-outside-in-with-ohce-kata)
+Practice program to build up code skills through katas, readings and talks.
 
+Run before at:
+
+* Magento, Merkle (partially), Trovit, Mango (partially)
+
+Currently being run at:
+
+* Audiense.
