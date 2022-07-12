@@ -24,3 +24,5 @@ The Credit Card Company
 ```
 
 [Original kata](https://github.com/testdouble/contributing-tests/wiki/Unusual-Spending-Kata)
+
+[CRC Cards tool](https://echeung.me/crcmaker/)
