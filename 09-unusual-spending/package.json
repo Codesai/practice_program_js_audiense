@@ -1,0 +1,24 @@
+{
+  "name": "unusual-spending",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-jest": "^27.4.0",
+    "jest": "^27.4.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:unit": "jest test/unit",
+    "test:acceptance": "jest test/acceptance",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "watchPathIgnorePatterns": [
+      "node_modules"
+    ]
+  }
+}
